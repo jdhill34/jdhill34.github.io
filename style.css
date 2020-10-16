@@ -1,0 +1,172 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  width: 100%;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container .sticky {
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #000;
+  padding: 5px 20px;
+}
+
+.main-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 15px 20px;
+  position: absolute;
+  transition: all 0.3s;
+  background: transparent;
+}
+
+.main-header h1 {
+  font-weight: 400;
+}
+
+.main-header ul {
+  display: flex;
+  gap: 50px;
+  list-style: none;
+}
+
+.main-header a {
+  color: #fff;
+}
+
+.main-header a:hover {
+  color: #ddd;
+}
+
+.background {
+  background: #000;
+  position: absolute;
+  z-index: -1;
+}
+.background .image {
+  background: url(./bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  opacity: 0.2;
+  width: 100vw;
+}
+
+#top {
+  height: 100vh;
+  color: #fff;
+  display: flex;
+  align-items: flex-start;
+  padding: 28vh 0 0 5vw;
+}
+
+#top .content {
+  width: 400px;
+}
+
+#top h2 {
+  font-size: 3.5em;
+  font-weight: 600;
+}
+
+#top p {
+  font-size: 1.2em;
+  font-weight: 400;
+}
+
+#top a p {
+  background: #076fb4;
+  color: #fff;
+  margin: 20px 0 0 0;
+  padding: 10px 20px;
+  border-radius: 10px;
+  display: inline-block;
+}
+
+#top a p:hover {
+  background: #055c95;
+}
+
+#about {
+  background: #222;
+  padding: 0 5vw 5vw 5vw;
+}
+
+.header {
+  padding: 45px 0;
+}
+
+.header h1 {
+  text-align: center;
+  border-radius: 10px;
+}
+
+#about .header h1 {
+  background: #076fb4;
+  color: #fff;
+}
+
+#about .content {
+  background: #fff;
+  color: #000;
+  padding: 5px 10px;
+  border-radius: 10px;
+}
+
+#about .content ul {
+  margin-left: 15px;
+}
+
+.up {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  bottom: 0;
+  z-index: 10;
+  margin-bottom: 15px;
+  visibility: collapse;
+}
+
+.up a {
+  background: #ccc;
+  padding: 0px 10px;
+  border-radius: 10px;
+  color: #000;
+  text-decoration: none;
+  font-size: 1.1em;
+}
+
+.visible {
+  visibility: visible;
+}
+
+#contact {
+  background: #000;
+  color: #076fb4;
+  padding: 45px 5vw;
+}
+
+#contact a {
+  color: #fff;
+}
+
+#contact .header h1 {
+  background: #333;
+  color: #fff;
+}
