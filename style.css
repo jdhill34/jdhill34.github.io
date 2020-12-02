@@ -133,26 +133,6 @@ a {
   margin-left: 15px;
 }
 
-.up {
-  position: fixed;
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  bottom: 0;
-  z-index: 10;
-  margin-bottom: 15px;
-  visibility: collapse;
-}
-
-.up a {
-  background: #ccc;
-  padding: 0px 10px;
-  border-radius: 10px;
-  color: #000;
-  text-decoration: none;
-  font-size: 1.1em;
-}
-
 .visible {
   visibility: visible;
 }
@@ -160,11 +140,13 @@ a {
 #contact {
   background: #000;
   color: #076fb4;
-  padding: 45px 5vw;
+  padding: 5px 5vw 45px 5vw;
 }
 
-#contact a {
+#contact a,
+#contact p {
   color: #fff;
+  font-size: 1em;
 }
 
 #contact .header h1 {
@@ -173,6 +155,11 @@ a {
 }
 
 @media only screen and (max-width: 700px) {
+  p,
+  li {
+    font-size: 0.85em;
+  }
+
   #top .content {
     width: 250px;
   }
